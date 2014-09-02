@@ -14,7 +14,6 @@
     [v1 addConstraintCenteringXY];
 ```
 
-![ss1](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png =240x)
 <img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png" width="240">
 
 ### Locate to bottom like toolbar
@@ -25,7 +24,7 @@
     [v1 addConstraintFromLeft:0 toRight:0];
 ```
 
-![ss2](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss2.png =240x)
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss2.png" width="240">
 
 ### Offset from center
 
@@ -34,7 +33,7 @@
     [v1 addConstraintCenteringXYWithOffset:UIOffsetMake(-50.0, -50.0)];
 ```
 
-![ss3](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss3.png =240x)
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss3.png" width="240">
 
 ### From another view
 
@@ -56,7 +55,7 @@
     [v1 addConstraintFromViewLeft:v2 distance:50.0];
 ```
 
-![ss4](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss4.png =240x)
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss4.png" width="240">
 
 ### Fill
 
@@ -68,7 +67,7 @@
     [v1 addConstraintFill];
 ```
 
-![ss5](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss5.png =240x)
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss5.png" width="240">
 
 ### Fill with inset
 
@@ -80,7 +79,7 @@
     [v1 addConstraintFillWithInsets:UIEdgeInsetsMake(30.0, 10.0, 100.0, 5.0)];
 ```
 
-![ss6](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss6.png =240x)
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss6.png" width="240">
 
 ### Constraint with animation
 
@@ -101,5 +100,5 @@
     }];
 ```
 
-![ss7](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss7.gif =240x)
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss7.gif" width="240">
 
