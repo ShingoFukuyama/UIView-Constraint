@@ -14,7 +14,7 @@
     [v1 addConstraintCenteringXY];
 ```
 
-<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png" width="240">
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png" width="240" style="border:1px solid #cccccc">
 
 ### Locate to bottom like toolbar
 
