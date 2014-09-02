@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (OHJ)
+@interface UIView (Constraint)
 
 /// Return an array of NSLayoutConstraint @[top, left, bottom, right]
 - (NSArray *)addConstraintFill;

@@ -7,7 +7,7 @@
 
 #import "UIView+Constraint.h"
 
-@implementation UIView (OHJ)
+@implementation UIView (Constraint)
 
 #pragma mark - Constraint
 
