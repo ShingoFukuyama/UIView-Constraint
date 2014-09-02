@@ -15,6 +15,7 @@
 ```
 
 ![ss1](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png =240x)
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png" width="240">
 
 ### Locate to bottom like toolbar
 
