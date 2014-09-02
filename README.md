@@ -20,6 +20,10 @@
 ### Locate to bottom like toolbar
 
 ```objc
+    UIView *v1 = [[UIView alloc] initWithFrame:CGRectZero];
+    v1.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:v1];
+    
     [v1 addConstraintHeight:44.0];
     [v1 addConstraintFromBottom:0];
     [v1 addConstraintFromLeft:0 toRight:0];
@@ -30,6 +34,10 @@
 ### Offset from center
 
 ```objc
+    UIView *v1 = [[UIView alloc] initWithFrame:CGRectZero];
+    v1.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:v1];
+    
     [v1 addConstraintWidth:100 height:100];
     [v1 addConstraintCenteringXYWithOffset:UIOffsetMake(-50.0, -50.0)];
 ```
