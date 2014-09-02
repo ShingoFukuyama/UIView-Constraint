@@ -1,6 +1,4 @@
 
-<link href="https://raw.github.com/simonlc/Markdown-CSS/master/markdown.css" rel="stylesheet"></link>
-
 # UIView+Constraint
 
 ## Examples
@@ -16,7 +14,8 @@
     [v1 addConstraintCenteringXY];
 ```
 
-<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png" width="240" style="border:1px solid #cccccc !important;">
+<img src="https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png" width="240">
+
 
 ### Locate to bottom like toolbar
 
