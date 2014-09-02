@@ -14,7 +14,7 @@
     [v1 addConstraintCenteringXY];
 ```
 
-[ss1](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png)
+![ss1](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss1.png)
 
 ### Locate to bottom like toolbar
 
@@ -24,7 +24,7 @@
     [v1 addConstraintFromLeft:0 toRight:0];
 ```
 
-[ss2](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss2.png)
+![ss2](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss2.png)
 
 ### Offset from center
 
@@ -33,7 +33,7 @@
     [v1 addConstraintCenteringXYWithOffset:UIOffsetMake(-50.0, -50.0)];
 ```
 
-[ss3](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss3.png)
+![ss3](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss3.png)
 
 ### From another view
 
@@ -55,7 +55,7 @@
     [v1 addConstraintFromViewLeft:v2 distance:50.0];
 ```
 
-[ss4](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss4.png)
+![ss4](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss4.png)
 
 ### Fill
 
@@ -67,7 +67,7 @@
     [v1 addConstraintFill];
 ```
 
-[ss5](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss5.png)
+![ss5](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss5.png)
 
 ### Fill with inset
 
@@ -79,7 +79,7 @@
     [v1 addConstraintFillWithInsets:UIEdgeInsetsMake(30.0, 10.0, 100.0, 5.0)];
 ```
 
-[ss6](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss6.png)
+![ss6](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss6.png)
 
 ### Constraint with animation
 
@@ -100,5 +100,5 @@
     }];
 ```
 
-[ss7](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss7.gif)
+![ss7](https://raw.githubusercontent.com/ShingoFukuyama/images/master/UIView+Constraint/ss7.gif)
 
