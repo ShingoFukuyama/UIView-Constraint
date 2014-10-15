@@ -204,7 +204,7 @@
 {
     return [self addConstraintFromView:fromView format:@"H:[fromView]-(distance)-[self]" distance:distance];
 }
-- (NSLayoutConstraint *)addConstraintAlignView:(UIView *)baseView layoutAttribute:(NSLayoutAttribute)attribute distance:(CGFloat)distance
+- (NSLayoutConstraint *)addConstraintAlignView:(UIView *)baseView layoutAttribute:(NSLayoutAttribute)attribute offset:(CGFloat)offset
 {
     UIView *superview = self.superview;
     if (!superview) return nil;
@@ -215,25 +215,25 @@
                                                                      toItem:baseView
                                                                   attribute:attribute
                                                                  multiplier:1.0
-                                                                   constant:distance];
+                                                                   constant:offset];
     [superview addConstraint:constraint];
     return constraint;
 }
-- (NSLayoutConstraint *)addConstraintAlignViewTop:(UIView *)baseView distance:(CGFloat)distance
+- (NSLayoutConstraint *)addConstraintAlignViewTop:(UIView *)baseView offset:(CGFloat)offset
 {
-    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeTop distance:distance];
+    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeTop offset:offset];
 }
-- (NSLayoutConstraint *)addConstraintAlignViewBottom:(UIView *)baseView distance:(CGFloat)distance
+- (NSLayoutConstraint *)addConstraintAlignViewBottom:(UIView *)baseView offset:(CGFloat)offset
 {
-    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeBottom distance:distance];
+    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeBottom offset:offset];
 }
-- (NSLayoutConstraint *)addConstraintAlignViewLeft:(UIView *)baseView distance:(CGFloat)distance
+- (NSLayoutConstraint *)addConstraintAlignViewLeft:(UIView *)baseView offset:(CGFloat)offset
 {
-    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeLeft distance:distance];
+    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeLeft offset:offset];
 }
-- (NSLayoutConstraint *)addConstraintAlignViewRight:(UIView *)baseView distance:(CGFloat)distance
+- (NSLayoutConstraint *)addConstraintAlignViewRight:(UIView *)baseView offset:(CGFloat)offset
 {
-    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeRight distance:distance];
+    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeRight offset:offset];
 }
 - (void)removeAllConstraints
 {
