@@ -43,6 +43,11 @@
 - (NSLayoutConstraint *)addConstraintFromViewLeft:(UIView *)fromView distance:(CGFloat)distance;
 - (NSLayoutConstraint *)addConstraintFromViewRight:(UIView *)fromView distance:(CGFloat)distance;
 
+- (NSLayoutConstraint *)addConstraintAlignViewTop:(UIView *)baseView distance:(CGFloat)distance;
+- (NSLayoutConstraint *)addConstraintAlignViewBottom:(UIView *)baseView distance:(CGFloat)distance;
+- (NSLayoutConstraint *)addConstraintAlignViewLeft:(UIView *)baseView distance:(CGFloat)distance;
+- (NSLayoutConstraint *)addConstraintAlignViewRight:(UIView *)baseView distance:(CGFloat)distance;
+
 - (void)removeAllConstraints;
 
 

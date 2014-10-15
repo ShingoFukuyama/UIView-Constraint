@@ -204,6 +204,37 @@
 {
     return [self addConstraintFromView:fromView format:@"H:[fromView]-(distance)-[self]" distance:distance];
 }
+- (NSLayoutConstraint *)addConstraintAlignView:(UIView *)baseView layoutAttribute:(NSLayoutAttribute)attribute distance:(CGFloat)distance
+{
+    UIView *superview = self.superview;
+    if (!superview) return nil;
+    self.translatesAutoresizingMaskIntoConstraints = NO;
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self
+                                                                  attribute:attribute
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:baseView
+                                                                  attribute:attribute
+                                                                 multiplier:1.0
+                                                                   constant:distance];
+    [superview addConstraint:constraint];
+    return constraint;
+}
+- (NSLayoutConstraint *)addConstraintAlignViewTop:(UIView *)baseView distance:(CGFloat)distance
+{
+    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeTop distance:distance];
+}
+- (NSLayoutConstraint *)addConstraintAlignViewBottom:(UIView *)baseView distance:(CGFloat)distance
+{
+    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeBottom distance:distance];
+}
+- (NSLayoutConstraint *)addConstraintAlignViewLeft:(UIView *)baseView distance:(CGFloat)distance
+{
+    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeLeft distance:distance];
+}
+- (NSLayoutConstraint *)addConstraintAlignViewRight:(UIView *)baseView distance:(CGFloat)distance
+{
+    return [self addConstraintAlignView:baseView layoutAttribute:NSLayoutAttributeRight distance:distance];
+}
 - (void)removeAllConstraints
 {
     if (self.constraints.count > 0) {
