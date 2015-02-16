@@ -177,6 +177,7 @@
 // inner method
 - (NSLayoutConstraint *)addConstraintFromView:(UIView *)fromView format:(NSString *)format distance:(CGFloat)distance
 {
+    if (!fromView) return nil;
     UIView *superview = self.superview;
     if (!superview) return nil;
     self.translatesAutoresizingMaskIntoConstraints = NO;
@@ -206,6 +207,7 @@
 }
 - (NSLayoutConstraint *)addConstraintAlignView:(UIView *)baseView layoutAttribute:(NSLayoutAttribute)attribute offset:(CGFloat)offset
 {
+    if (!baseView) return nil;
     UIView *superview = self.superview;
     if (!superview) return nil;
     self.translatesAutoresizingMaskIntoConstraints = NO;
